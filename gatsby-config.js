@@ -7,16 +7,16 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: "qGxpJFSL_cI3UUZJEJcaW7dyUSTKoJX9aIHDJYAz4t0",
-        spaceId: "",
+        spaceId: "mf8m7p39ogr5",
       },
     },
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "",
+    //   },
+    // },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
