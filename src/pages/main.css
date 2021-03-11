@@ -1,5 +1,9 @@
-* {
+@import url("https://use.typekit.net/dcs4wru.css");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -8,11 +12,12 @@ html, body {
 
 .body {
     position: relative;
+    font-size: 10px;
 }
 
 .wrapper {
-    background-color: antiquewhite;
-    border: aquamarine 3px dotted;
+    /* background-color: antiquewhite;
+    border: aquamarine 3px dotted; */
     width: 310px;
     /* height: auto; */
     margin: 0 auto;
@@ -26,7 +31,7 @@ html, body {
 }
 
 .painting {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin: 0 auto;
     /* display: none; */
 }
@@ -39,3 +44,175 @@ html, body {
     display: flex;
     justify-content: space-evenly;
 }
+
+.container {
+    background-color: blueviolet;
+    background-color: #FCFAFF;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* typography */
+
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.link {
+    /* position: fixed; */
+    text-decoration: underline;
+    color: black;
+    margin: 1rem;
+}
+
+.link__index {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: none; */
+}
+
+.link__painting {
+    display: none;
+}
+
+.link__about {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.link__contact {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+.link__shipping {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
+
+.index__logo {
+    text-align: center;
+
+}
+
+.index__logo h1 {
+    font-size: 3rem;
+    font-family: linotype-didot, serif;
+    font-weight: 700;
+
+}
+
+.index__logo p {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+}
+
+.wrapper {
+
+}
+
+.button {
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    /* background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.3rem; */
+}
+
+.button__next {
+    /* position: absolute;
+    top: 20%;
+    left: 0; */
+    display: inline;
+    margin: 0 1rem;
+}
+
+.button__prev {
+    /* position: absolute;
+    top: 20%;
+    right: 0; */
+    display: inline;
+    margin: 0 1rem;
+}
+
+
+/* MY FONTS */
+
+/* 
+Didot LT Pro Bold
+
+font-family: linotype-didot, serif;
+font-weight: 700;
+font-style: normal;
+
+Didot LT Pro Italic
+
+font-family: linotype-didot, serif;
+font-weight: 400;
+font-style: italic;
+
+Didot LT Pro Roman
+
+font-family: linotype-didot, serif;
+font-weight: 400;
+font-style: normal; 
+
+
+
+Neue Haas Grotesk Display Pro 25 Thin
+
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Neue Haas Grotesk Display Pro 26 Thin Italic
+
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 200;
+font-style: italic;
+
+Neue Haas Grotesk Display Pro 35 Extra Light
+
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Neue Haas Grotesk Display Pro 36 Extra Light Italic
+
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+Neue Haas Grotesk Display Pro 45 Light
+
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Neue Haas Grotesk Display Pro 75 Bold
+
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 700;
+font-style: normal;
+*/
+
+ 
+
