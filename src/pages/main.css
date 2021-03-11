@@ -28,6 +28,11 @@ html, body {
 .painting {
     background-color: aquamarine;
     margin: 0 auto;
+    /* display: none; */
+}
+
+.active {
+    display: block;
 }
 
 .counter {

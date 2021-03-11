@@ -1,45 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 import Painting from '../components/Painting';
 import './main.css';
-import Counter from "../components/Counter";
-
 
 function App({ data }) {
-  console.log(data)
+  // data is the data object recieved from graphql query
 
-  const paintings = data.allContentfulPainting.edges
-  // const title = paintings.edges[0].node.title.
+  const paintingsData = data.allContentfulPainting.edges; 
+  // array of data from CTF
 
-  const paintingComponents = paintings.map(painting => {
-    return (
-      <Painting
-        key = {painting.node.title}
-        title = {painting.node.title}
-        imageUrl = {painting.node.image.file.url}
-      />
-    )
+  const [ paintings, setPaintings ] = useState(paintingsData);
+  const [ index, setIndex ] = useState(0);
+
+  function nextPainting() {
+    console.log('show me stuff');
+    if (index === paintings.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
   }
-)
+
+  function prevPainting() {
+    console.log('prevpaint');
+    if (index === 0) {
+      setIndex(paintings.length - 1);
+    } else {
+      setIndex(index - 1);
+    }
+  }
   
   return (
     <div className="wrapper">
-      <h1>estem Jurek Kiler i mam wszystko w dupie</h1>
-      <p>xx</p>
+        <button onClick={nextPainting}>nexxt</button>
+        <button onClick={prevPainting}>prev</button>
 
-      {/* <Painting 
-        title = {paintings[0].node.title}
-        imageUrl = {paintings[0].node.image.file.url}
-        /> */}
-        {paintingComponents}
-        <p>xxx</p>
-
-        <Counter />
-      
+        <Painting
+        key = {index}
+        title = {paintings[index].node.title}
+        imageUrl = {paintings[index].node.image.file.url}
+        />
     </div>
   )
 }
-
 
 export default App
 
