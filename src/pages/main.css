@@ -16,24 +16,67 @@ html, body {
 }
 
 .wrapper {
-    /* background-color: antiquewhite;
-    border: aquamarine 3px dotted; */
     width: 310px;
-    /* height: auto; */
     margin: 0 auto;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-49%, -50%); */
-
     display: flex;
     flex-direction: column;
+}
+
+.about__text {
+    margin: 1rem;
+    text-align: justify;
+    font-size: 0.75rem;
+}
+ 
+.about__text h2 {
+    text-align: right;
+    margin-bottom: 0.25rem;
+    
+}
+
+.about__image-full {
+    width: 100%;
+    max-width: 310px;
+    height: auto;
+    max-height: calc(100vh - 4rem);
+    float: left;
+    shape-outside: circle(10%);
+    shape-outside: url(../images/About.png);
+    shape-margin: 0.5rem;
+    /* border-radius: 0.25rem; */
+    opacity: 0.75;
+
 }
 
 .painting {
     /* background-color: aquamarine; */
     margin: 0 auto;
     /* display: none; */
+    font-size: 0.75rem;
+    /* background-color: blueviolet; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.painting h3 {
+    font-family: linotype-didot, serif;
+    font-weight: 400;
+    font-style: normal; 
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    display: inline;
+}
+.painting span {
+    font-size: 0.5rem;
+}
+
+.painting p {
+    text-align: justify;
+    margin-bottom: 1rem;
 }
 
 .active {
@@ -46,14 +89,13 @@ html, body {
 }
 
 .container {
-    background-color: blueviolet;
     background-color: #FCFAFF;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
     /* typography */
 
