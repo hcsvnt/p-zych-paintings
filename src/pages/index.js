@@ -1,21 +1,11 @@
 import * as React from "react";
 import Layout from "../components/Layout.js"
-import { Link } from "gatsby";
+import IndexComponent from "../components/IndexComponent.js";
 
-// markup
 const App = () => {
   return (
     <Layout>
-         <div className="index__logo">
-            <h1>
-                Patrycja Zych
-            </h1>
-            <p>
-                <Link to="/PaintingPage" className="link">
-                    Paintings
-                </Link>
-            </p>
-        </div>
+         <IndexComponent />
     </Layout>
   )
 }

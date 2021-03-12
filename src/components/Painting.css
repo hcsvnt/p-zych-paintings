@@ -1,0 +1,57 @@
+.painting {
+    margin: 0 auto;
+    font-size: 0.75rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.painting h3 {
+    font-family: linotype-didot, serif;
+    font-weight: 400;
+    font-style: normal; 
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    display: inline;
+}
+.painting span {
+    font-size: 0.5rem;
+}
+
+.painting p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.button {
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    /* background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.3rem; */
+}
+
+.button__next {
+    /* position: absolute;
+    top: 20%;
+    left: 0; */
+    display: inline;
+    margin: 0 1rem;
+}
+
+.button__prev {
+    /* position: absolute;
+    top: 20%;
+    right: 0; */
+    display: inline;
+    margin: 0 1rem;
+}

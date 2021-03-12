@@ -1,0 +1,26 @@
+.about__text {
+    margin: 1rem;
+    font-size: 0.75rem;
+}
+ 
+.about__text h2 {
+    text-align: right;
+    margin-bottom: 0.25rem;
+}
+
+.about__image-full {
+    width: 100%;
+    max-width: 310px;
+    height: auto;
+    max-height: calc(100vh - 4rem);
+    float: left;
+    shape-outside: circle(10%);
+    shape-outside: url(../images/About.png);
+    shape-margin: 0.5rem;
+    opacity: 0.75;
+}
+
+.about__text p {
+    text-align: justify;
+}
+

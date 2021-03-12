@@ -1,0 +1,16 @@
+
+.index__logo {
+    text-align: center;
+}
+
+.index__logo h1 {
+    font-size: 3rem;
+    font-family: linotype-didot, serif;
+    font-weight: 700;
+}
+
+.index__logo p {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+}

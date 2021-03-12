@@ -1,16 +1,14 @@
 import * as React from "react";
 import Layout from "../components/Layout.js"
+import '../components/AboutPage.css'
 // import { Link } from "gatsby";
 import AboutImageFull from "../images/About.png"
 
-// markup
-const App = () => {
+const AboutPage = () => {
   return (
       <Layout>
         <div className="about__text">
-         
           <img src={AboutImageFull} className="about__image-full"></img>
-          
           <h2>
             Patrycja Zych
           </h2>
@@ -23,13 +21,9 @@ const App = () => {
               Debitis pariatur ad cum hic molestias ipsum et fugit 
               deleniti, inventore laborum facilis non ratione quisquam minima, nihil sint!
           </p>
-
-          
- 
-       
         </div>        
       </Layout>
   )
 }
 
-export default App
+export default AboutPage

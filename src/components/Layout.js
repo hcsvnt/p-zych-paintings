@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import '../pages/main.css'
+// import '../pages/main.css'
+import '../components/Layout.css'
 
 // markup
 const Layout = ({children}) => {

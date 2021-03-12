@@ -1,4 +1,5 @@
-import React from 'react' 
+import React from 'react';
+import '../components/Painting.css'
 
 const Painting = (props) => {
     return (
@@ -8,7 +9,6 @@ const Painting = (props) => {
                 <h3>"{props.title}"</h3>
                 <span>2017 | oil on canvas | 50x70cm | $360</span>
             </header>
-            
             <p>
                 are you description?
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim quas 

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
 import { graphql } from "gatsby";
 import Painting from '../components/Painting';
-import './main.css';
 import Layout from "../components/Layout";
 
 function PaintingPage({ data }) {
