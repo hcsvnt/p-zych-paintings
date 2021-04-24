@@ -3,14 +3,40 @@
 }
 
 .contact {
+    width: auto;
+    max-width: 400px;
     margin: 0 1rem;
     text-align: justify;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 1fr;
+
 }
 
 .contact h3 {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .contact p {
+    grid-column: 1 / span 2;
 
+}
+
+.svg__wrapper {
+    text-align: right;
+    height: 2rem;
+    padding: 4px;
+}
+
+.svg__wrapper img {
+    margin-left: 1rem;
+}
+
+
+@media screen and (min-width: 750px) {
+    .contact {
+        font-size: 1rem;
+    }
 }

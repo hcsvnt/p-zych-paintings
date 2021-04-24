@@ -3,11 +3,12 @@ import Layout from "../components/Layout.js"
 import '../components/AboutPage.css'
 // import { Link } from "gatsby";
 import AboutImageFull from "../images/About.png"
+import PaintingsButton from "../components/PaintingsButton/index.js";
 
 const AboutPage = () => {
   return (
       <Layout>
-        <div className="about__text">
+        <article className="about">
           <img src={AboutImageFull} className="about__image-full"></img>
           <h2>
             Patrycja Zych
@@ -21,7 +22,9 @@ const AboutPage = () => {
               Debitis pariatur ad cum hic molestias ipsum et fugit 
               deleniti, inventore laborum facilis non ratione quisquam minima, nihil sint!
           </p>
-        </div>        
+        </article>
+        
+        <PaintingsButton />        
       </Layout>
   )
 }

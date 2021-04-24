@@ -29,21 +29,27 @@ function PaintingPage({ data }) {
       setIndex(index - 1);
     }
   }
+
+  // function handleKey(event) {
+  //   console.log('heheheszki')
+  //   if (event.key == 'k') {
+  //     console.log("mamuskaaa")
+  //   }
+  // }
   
   return (
     <Layout>
-        <div className="wrapper">
-
+        <div className="painting__wrapper">
           <Painting
           key = {index}
           title = {paintings[index].node.title}
           imageUrl = {paintings[index].node.image.file.url}
           />
           <div className="navi__paint">
+            <button onClick={prevPainting} className="button__prev button" >prev</button>/
             <button onClick={nextPainting} className="button__next button" >next</button>
-            <button onClick={prevPainting} className="button__prev button" >prev</button>
           </div>
-      </div>
+        </div>
     </Layout>
     
   )

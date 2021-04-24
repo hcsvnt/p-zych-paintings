@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import ShippingComponent from '../components/ShippingComponent';
 import { graphql } from "gatsby";
+import PaintingsButton from "../components/PaintingsButton";
 
 const ShippingPage = ( {data} ) => {
   console.log(data)
@@ -28,6 +29,8 @@ const ShippingPage = ( {data} ) => {
           title = { shippingOptions[1].node.title }
           details = { shippingOptions[1].node.details.raw }
         />
+
+        <PaintingsButton/>
       </div>
       
     </Layout>

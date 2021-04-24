@@ -1,0 +1,22 @@
+.buttonCTA {
+    margin: 3rem 0;
+    padding: 0.5rem 0.75rem;
+    border: 1px black solid;
+    /* border-radius: 10px; */
+    font-size: 1.5rem;
+    font-family: linotype-didot, serif;
+    font-weight: 700;
+    font-style: normal;
+
+    background-color: inherit;
+
+    transition: 250ms ease-in-out;
+}
+
+.buttonCTA a {
+    /* text-decoration: none; */
+}
+
+.buttonCTA:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,26 +1,39 @@
-.about__text {
+.about {
+    max-width: 500px;
     margin: 1rem;
     font-size: 0.75rem;
 }
  
-.about__text h2 {
+.about h2 {
     text-align: right;
     margin-bottom: 0.25rem;
 }
 
 .about__image-full {
     width: 100%;
-    max-width: 310px;
     height: auto;
     max-height: calc(100vh - 4rem);
+    margin-top: 2rem;
+    margin-left: -1rem;
     float: left;
     shape-outside: circle(10%);
     shape-outside: url(../images/About.png);
-    shape-margin: 0.5rem;
+    shape-margin: 0.3rem;
     opacity: 0.75;
 }
 
-.about__text p {
-    text-align: justify;
+.about p {
+    text-align: right;
 }
 
+@media screen and (min-width:400px) {
+    .about h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .about {
+        font-size: 1rem;
+    }
+}

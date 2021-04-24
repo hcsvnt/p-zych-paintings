@@ -2,8 +2,10 @@ import * as React from "react";
 import { Link } from "gatsby";
 // import '../pages/main.css'
 import '../components/Layout.css'
+import PaintingsButton from "./PaintingsButton"
 
 // markup
+
 const Layout = ({children}) => {
   return (
     <div className="container">

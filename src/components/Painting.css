@@ -1,6 +1,30 @@
+.painting__wrapper {
+    /* background-color: greenyellow; */
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 52px 1fr 3rem 52px;
+}
+
 .painting {
+    grid-row: 2;
     margin: 0 auto;
     font-size: 0.75rem;
+
+    max-width: 500px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.painting img {
+    width: 100%;
+    /* box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3); */
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+    border-radius: 4px;
 }
 
 header {
@@ -19,6 +43,10 @@ header {
 }
 .painting span {
     font-size: 0.5rem;
+    vertical-align: baseline;
+    /* background-color: lightcoral;s */
+    align-self: flex-end;
+    margin-bottom: 10px;
 }
 
 .painting p {
@@ -40,12 +68,26 @@ header {
     padding: 0.3rem; */
 }
 
+.navi__paint {
+    text-align: center;
+    grid-row: 3;
+    /* margin-bottom: 1rem; */
+    /* border: 1px violet solid; */
+}
+
+.navi__paint button {
+    /* border: 1px dashed black; */
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 8px 16px;
+}
+
 .button__next {
     /* position: absolute;
     top: 20%;
     left: 0; */
     display: inline;
-    margin: 0 1rem;
+    /* margin: 0 8px; */
 }
 
 .button__prev {
@@ -53,5 +95,27 @@ header {
     top: 20%;
     right: 0; */
     display: inline;
-    margin: 0 1rem;
+    /* margin: 0 8px; */
+}
+
+
+@media screen and (min-width: 400px) {
+    .painting {
+        font-size: 1rem;
+    }
+
+    .painting span {
+        font-size: 0.75rem;
+    }
+
+    header {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .painting img {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        margin-bottom: 1rem;
+    }
 }

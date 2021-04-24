@@ -17,17 +17,24 @@ html, body {
 
 .wrapper {
     width: 310px;
+    width: calc(100vw - 10px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    background-color: aqua;
+
 }
 
 .container {
     background-color: #FCFAFF;
+    /* background-color: blueviolet; */
     width: 100%;
     height: 100vh;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     justify-content: center;
     align-items: center; 
 
@@ -41,7 +48,11 @@ html, body {
 .link {
     text-decoration: underline;
     color: black;
-    margin: 1rem;
+    padding: 1rem;
+    /* margin: 1rem; */
+    border-radius: 8px;
+
+    background-color: inherit;
 }
 
 .link__index {
@@ -70,6 +81,10 @@ html, body {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 
