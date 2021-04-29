@@ -1,12 +1,22 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "pzych_paintings",
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["accessToken"]
+      },
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "qGxpJFSL_cI3UUZJEJcaW7dyUSTKoJX9aIHDJYAz4t0",
+        accessToken: process.env.CTF_TOKEN ,
         spaceId: "mf8m7p39ogr5",
       },
     },
@@ -37,3 +47,6 @@ module.exports = {
     },
   ],
 };
+
+
+
